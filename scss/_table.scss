@@ -1,0 +1,44 @@
+// styles for table
+
+// Table
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+th,
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+// Table head cell
+
+th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: $primary-color;
+  color: $white;
+  text-align: start;
+}
+
+// Table hover
+
+tbody tr {
+  &:hover {
+    background-color: rgba($primary-500, 0.075);
+  }
+}
+
+// Table striped
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba($primary-500, 0.075);
+}

@@ -1,0 +1,29 @@
+$alert-verient: (
+  "primary": $primary-100,
+  "secondary": $secondary-100,
+  "success": $success-100,
+  "danger": $danger-100,
+  "warning": $warning-100,
+  "info": $info-100,
+  "light": $light-100,
+  "dark": $dark-100,
+);
+
+.alert {
+  @each $name, $color in $alert-verient {
+    &-#{$name} {
+      background-color: $color;
+      padding: 10px;
+      border-radius: 5px;
+      .alert-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .alert-body {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}

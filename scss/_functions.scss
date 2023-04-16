@@ -1,0 +1,10 @@
+@function tint-color($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade-color($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@function input-focus-shadow($color) {
+  @return 0 0 0 0.2rem rgba($color, 0.25);
+}

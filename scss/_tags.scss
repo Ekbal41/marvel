@@ -1,0 +1,34 @@
+//minimal style for paragraph tag
+p {
+  margin: 0;
+  padding: 0;
+}
+
+//minimal style for list tag
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//minimal style for anchor tag
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//minimal style for image tag
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

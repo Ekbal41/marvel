@@ -1,0 +1,133 @@
+@each $color, $color-value in $all-colors {
+  @each $size, $value in $border-sizes {
+    .border-#{$color}-#{$size} {
+      border: $color-value solid $value;
+    }
+
+    .border-top-#{$color}-#{$size} {
+      border-top: $color-value solid $value;
+    }
+
+    .border-right-#{$color}-#{$size} {
+      border-right: $color-value solid $value;
+    }
+
+    .border-bottom-#{$color}-#{$size} {
+      border-bottom: $color-value solid $value;
+    }
+
+    .border-left-#{$color}-#{$size} {
+      border-left: $color-value solid $value;
+    }
+
+    @include respond-to(sm) {
+      .border-sm-#{$color}-#{$size} {
+        border: $color-value solid $value;
+      }
+
+      .border-top-sm-#{$color}-#{$size} {
+        border-top: $color-value solid $value;
+      }
+
+      .border-right-sm-#{$color}-#{$size} {
+        border-right: $color-value solid $value;
+      }
+
+      .border-bottom-sm-#{$color}-#{$size} {
+        border-bottom: $color-value solid $value;
+      }
+
+      .border-left-sm-#{$color}-#{$size} {
+        border-left: $color-value solid $value;
+      }
+    }
+
+    @include respond-to(md) {
+      .border-md-#{$color}-#{$size} {
+        border: $color-value solid $value;
+      }
+
+      .border-top-md-#{$color}-#{$size} {
+        border-top: $color-value solid $value;
+      }
+
+      .border-right-md-#{$color}-#{$size} {
+        border-right: $color-value solid $value;
+      }
+
+      .border-bottom-md-#{$color}-#{$size} {
+        border-bottom: $color-value solid $value;
+      }
+
+      .border-left-md-#{$color}-#{$size} {
+        border-left: $color-value solid $value;
+      }
+    }
+
+    @include respond-to(lg) {
+      .border-lg-#{$color}-#{$size} {
+        border: $color-value solid $value;
+      }
+
+      .border-top-lg-#{$color}-#{$size} {
+        border-top: $color-value solid $value;
+      }
+
+      .border-right-lg-#{$color}-#{$size} {
+        border-right: $color-value solid $value;
+      }
+
+      .border-bottom-lg-#{$color}-#{$size} {
+        border-bottom: $color-value solid $value;
+      }
+
+      .border-left-lg-#{$color}-#{$size} {
+        border-left: $color-value solid $value;
+      }
+    }
+
+    @include respond-to(xl) {
+      .border-xl-#{$color}-#{$size} {
+        border: $color-value solid $value;
+      }
+
+      .border-top-xl-#{$color}-#{$size} {
+        border-top: $color-value solid $value;
+      }
+
+      .border-right-xl-#{$color}-#{$size} {
+        border-right: $color-value solid $value;
+      }
+
+      .border-bottom-xl-#{$color}-#{$size} {
+        border-bottom: $color-value solid $value;
+      }
+
+      .border-left-xl-#{$color}-#{$size} {
+        border-left: $color-value solid $value;
+      }
+    }
+
+    @include respond-to(xxl) {
+      .border-xxl-#{$color}-#{$size} {
+        border: $color-value solid $value;
+      }
+
+      .border-top-xxl-#{$color}-#{$size} {
+        border-top: $color-value solid $value;
+      }
+
+      .border-right-xxl-#{$color}-#{$size} {
+        border-right: $color-value solid $value;
+      }
+
+      .border-bottom-xxl-#{$color}-#{$size} {
+        border-bottom: $color-value solid $value;
+      }
+
+      .border-left-xxl-#{$color}-#{$size} {
+        border-left: $color-value solid $value;
+      }
+    }
+  }
+}

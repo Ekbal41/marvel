@@ -1,0 +1,227 @@
+@each $key, $value in $pmr-sizes {
+  .rounded-#{$key} {
+    border-radius: $value;
+  }
+
+  .rounded-top-#{$key} {
+    border-top-left-radius: $value;
+    border-top-right-radius: $value;
+  }
+
+  .rounded-right-#{$key} {
+    border-top-right-radius: $value;
+    border-bottom-right-radius: $value;
+  }
+
+  .rounded-bottom-#{$key} {
+    border-bottom-right-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+
+  .rounded-left-#{$key} {
+    border-top-left-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+
+  .rounded-circle {
+    border-radius: 50%;
+  }
+
+  .rounded-pill {
+    border-radius: 50rem;
+  }
+
+  .rounded-0 {
+    border-radius: 0;
+  }
+
+  @include respond-to(sm) {
+    .rounded-sm-#{$key} {
+      border-radius: $value;
+    }
+
+    .rounded-top-sm-#{$key} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    .rounded-right-sm-#{$key} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    .rounded-bottom-sm-#{$key} {
+      border-bottom-right-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-left-sm-#{$key} {
+      border-top-left-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-circle-sm {
+      border-radius: 50%;
+    }
+
+    .rounded-pill-sm {
+      border-radius: 50rem;
+    }
+
+    .rounded-0-sm {
+      border-radius: 0;
+    }
+  }
+
+  @include respond-to(md) {
+    .rounded-md-#{$key} {
+      border-radius: $value;
+    }
+
+    .rounded-top-md-#{$key} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    .rounded-right-md-#{$key} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    .rounded-bottom-md-#{$key} {
+      border-bottom-right-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-left-md-#{$key} {
+      border-top-left-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-circle-md {
+      border-radius: 50%;
+    }
+
+    .rounded-pill-md {
+      border-radius: 50rem;
+    }
+
+    .rounded-0-md {
+      border-radius: 0;
+    }
+  }
+
+  @include respond-to(lg) {
+    .rounded-lg-#{$key} {
+      border-radius: $value;
+    }
+
+    .rounded-top-lg-#{$key} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    .rounded-right-lg-#{$key} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    .rounded-bottom-lg-#{$key} {
+      border-bottom-right-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-left-lg-#{$key} {
+      border-top-left-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-circle-lg {
+      border-radius: 50%;
+    }
+
+    .rounded-pill-lg {
+      border-radius: 50rem;
+    }
+
+    .rounded-0-lg {
+      border-radius: 0;
+    }
+  }
+
+  @include respond-to(xl) {
+    .rounded-xl-#{$key} {
+      border-radius: $value;
+    }
+
+    .rounded-top-xl-#{$key} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    .rounded-right-xl-#{$key} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    .rounded-bottom-xl-#{$key} {
+      border-bottom-right-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-left-xl-#{$key} {
+      border-top-left-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-circle-xl {
+      border-radius: 50%;
+    }
+
+    .rounded-pill-xl {
+      border-radius: 50rem;
+    }
+
+    .rounded-0-xl {
+      border-radius: 0;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .rounded-xxl-#{$key} {
+      border-radius: $value;
+    }
+
+    .rounded-top-xxl-#{$key} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    .rounded-right-xxl-#{$key} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    .rounded-bottom-xxl-#{$key} {
+      border-bottom-right-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-left-xxl-#{$key} {
+      border-top-left-radius: $value;
+      border-bottom-left-radius: $value;
+    }
+
+    .rounded-circle-xxl {
+      border-radius: 50%;
+    }
+
+    .rounded-pill-xxl {
+      border-radius: 50rem;
+    }
+
+    .rounded-0-xxl {
+      border-radius: 0;
+    }
+  }
+}

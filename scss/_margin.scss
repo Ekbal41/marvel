@@ -1,0 +1,208 @@
+//margin in all direction
+@each $key, $value in $pmr-sizes {
+  .m-#{$key} {
+    margin: $value;
+  }
+
+  @if $key == "auto" {
+    .mx-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+
+    .my-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  @include respond-to(sm) {
+    .m-sm-#{$key} {
+      margin: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .m-md-#{$key} {
+      margin: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .m-lg-#{$key} {
+      margin: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .m-xl-#{$key} {
+      margin: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .m-xxl-#{$key} {
+      margin: $value;
+    }
+  }
+}
+
+//margin in x and y axis
+
+@each $key, $value in $pmr-sizes {
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  @include respond-to(sm) {
+    .mx-sm-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-sm-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .mx-md-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-md-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .mx-lg-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-lg-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .mx-xl-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-xl-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .mx-xxl-#{$key} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .my-xxl-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+}
+
+//margin in top, right, bottom and left
+
+@each $key, $value in $pmr-sizes {
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+
+  @include respond-to(sm) {
+    .mt-sm-#{$key} {
+      margin-top: $value;
+    }
+    .mr-sm-#{$key} {
+      margin-right: $value;
+    }
+    .mb-sm-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-sm-#{$key} {
+      margin-left: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .mt-md-#{$key} {
+      margin-top: $value;
+    }
+    .mr-md-#{$key} {
+      margin-right: $value;
+    }
+    .mb-md-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-md-#{$key} {
+      margin-left: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .mt-lg-#{$key} {
+      margin-top: $value;
+    }
+    .mr-lg-#{$key} {
+      margin-right: $value;
+    }
+    .mb-lg-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-lg-#{$key} {
+      margin-left: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .mt-xl-#{$key} {
+      margin-top: $value;
+    }
+    .mr-xl-#{$key} {
+      margin-right: $value;
+    }
+    .mb-xl-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-xl-#{$key} {
+      margin-left: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .mt-xxl-#{$key} {
+      margin-top: $value;
+    }
+    .mr-xxl-#{$key} {
+      margin-right: $value;
+    }
+    .mb-xxl-#{$key} {
+      margin-bottom: $value;
+    }
+    .ml-xxl-#{$key} {
+      margin-left: $value;
+    }
+  }
+}

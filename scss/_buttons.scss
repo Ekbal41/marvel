@@ -1,0 +1,71 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background: $primary-color;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  background: $secondary-color;
+  color: $dark-color;
+  &:hover {
+    background: lighten($secondary-color, 10%);
+  }
+}
+
+.btn-info {
+  background: $info-color;
+  &:hover {
+    background: darken($info-color, 10%);
+  }
+}
+
+.btn-success {
+  background: $success-color;
+  &:hover {
+    background: darken($success-color, 10%);
+  }
+}
+
+.btn-warning {
+  background: $warning-color;
+  &:hover {
+    background: darken($warning-color, 10%);
+  }
+}
+
+.btn-danger {
+  background: $danger-color;
+  &:hover {
+    background: darken($danger-color, 10%);
+  }
+}
+
+.btn-light {
+  background: $light-color;
+  color: $dark-color;
+  &:hover {
+    background: lighten($light-color, 10%);
+  }
+}
+
+.btn-dark {
+  background: $dark-color;
+  &:hover {
+    background: darken($dark-color, 10%);
+  }
+}

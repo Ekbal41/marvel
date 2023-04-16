@@ -1,0 +1,31 @@
+//height
+
+@each $key, $value in $height-width {
+  .h-#{$key} {
+    height: $value;
+  }
+}
+
+//width
+
+@each $key, $value in $height-width {
+  .w-#{$key} {
+    width: $value;
+  }
+}
+
+.w-100vh {
+  width: 100vh;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.h-100vw {
+  height: 100vw;
+}

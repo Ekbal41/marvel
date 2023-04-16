@@ -1,0 +1,195 @@
+@each $key, $value in $pmr-sizes {
+  .p-#{$key} {
+    padding: $value;
+  }
+
+  @include respond-to(sm) {
+    .p-sm-#{$key} {
+      padding: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .p-md-#{$key} {
+      padding: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .p-lg-#{$key} {
+      padding: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .p-xl-#{$key} {
+      padding: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .p-xxl-#{$key} {
+      padding: $value;
+    }
+  }
+}
+
+//padding in x and y axis
+
+@each $key, $value in $pmr-sizes {
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  @include respond-to(sm) {
+    .px-sm-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-sm-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .px-md-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-md-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .px-lg-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-lg-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .px-xl-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-xl-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .px-xxl-#{$key} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .py-xxl-#{$key} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+}
+
+//padding in top, right, bottom and left
+
+@each $key, $value in $pmr-sizes {
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+
+  @include respond-to(sm) {
+    .pt-sm-#{$key} {
+      padding-top: $value;
+    }
+    .pr-sm-#{$key} {
+      padding-right: $value;
+    }
+    .pb-sm-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-sm-#{$key} {
+      padding-left: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .pt-md-#{$key} {
+      padding-top: $value;
+    }
+    .pr-md-#{$key} {
+      padding-right: $value;
+    }
+    .pb-md-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-md-#{$key} {
+      padding-left: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .pt-lg-#{$key} {
+      padding-top: $value;
+    }
+    .pr-lg-#{$key} {
+      padding-right: $value;
+    }
+    .pb-lg-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-lg-#{$key} {
+      padding-left: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .pt-xl-#{$key} {
+      padding-top: $value;
+    }
+    .pr-xl-#{$key} {
+      padding-right: $value;
+    }
+    .pb-xl-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-xl-#{$key} {
+      padding-left: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .pt-xxl-#{$key} {
+      padding-top: $value;
+    }
+    .pr-xxl-#{$key} {
+      padding-right: $value;
+    }
+    .pb-xxl-#{$key} {
+      padding-bottom: $value;
+    }
+    .pl-xxl-#{$key} {
+      padding-left: $value;
+    }
+  }
+}

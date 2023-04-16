@@ -1,0 +1,184 @@
+//font sizes
+
+@each $size, $value in $font-sizes {
+  .fs-#{$size} {
+    font-size: $value;
+  }
+  @include respond-to(sm) {
+    .fs-sm-#{$size} {
+      font-size: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .fs-md-#{$size} {
+      font-size: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .fs-lg-#{$size} {
+      font-size: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .fs-xl-#{$size} {
+      font-size: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .fs-xxl-#{$size} {
+      font-size: $value;
+    }
+  }
+}
+
+//font familly
+
+@each $font-name, $font-family in $css-default-fonts {
+  .font-#{$font-name} {
+    font-family: $font-family;
+  }
+
+  @include respond-to(sm) {
+    .font-sm-#{$font-name} {
+      font-family: $font-family;
+    }
+  }
+  @include respond-to(md) {
+    .font-md-#{$font-name} {
+      font-family: $font-family;
+    }
+  }
+
+  @include respond-to(lg) {
+    .font-lg-#{$font-name} {
+      font-family: $font-family;
+    }
+  }
+
+  @include respond-to(xl) {
+    .font-xl-#{$font-name} {
+      font-family: $font-family;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .font-xxl-#{$font-name} {
+      font-family: $font-family;
+    }
+  }
+}
+
+@each $align, $value in $css-text-align {
+  .text-#{$align} {
+    text-align: $value;
+  }
+  @include respond-to(sm) {
+    .text-sm-#{$align} {
+      text-align: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .text-md-#{$align} {
+      text-align: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .text-lg-#{$align} {
+      text-align: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .text-xl-#{$align} {
+      text-align: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .text-xxl-#{$align} {
+      text-align: $value;
+    }
+  }
+}
+
+@each $weight, $value in $font-weight {
+  .fw-#{$weight} {
+    font-weight: $value;
+  }
+
+  @include respond-to(sm) {
+    .fw-sm-#{$weight} {
+      font-weight: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .fw-md-#{$weight} {
+      font-weight: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .fw-lg-#{$weight} {
+      font-weight: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .fw-xl-#{$weight} {
+      font-weight: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .fw-xxl-#{$weight} {
+      font-weight: $value;
+    }
+  }
+}
+
+@each $transform, $value in $css-text-transform {
+  .text-#{$transform} {
+    text-transform: $value;
+  }
+
+  @include respond-to(sm) {
+    .text-sm-#{$transform} {
+      text-transform: $value;
+    }
+  }
+
+  @include respond-to(md) {
+    .text-md-#{$transform} {
+      text-transform: $value;
+    }
+  }
+
+  @include respond-to(lg) {
+    .text-lg-#{$transform} {
+      text-transform: $value;
+    }
+  }
+
+  @include respond-to(xl) {
+    .text-xl-#{$transform} {
+      text-transform: $value;
+    }
+  }
+
+  @include respond-to(xxl) {
+    .text-xxl-#{$transform} {
+      text-transform: $value;
+    }
+  }
+}
+
+.text-white {
+  color: $white;
+}

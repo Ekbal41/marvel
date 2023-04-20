@@ -43,7 +43,7 @@
     </section>
     <section>
       <div class="flex">
-        <div class="w-15 h-100vh p-4 shadow-lg border-right-primary-1">
+        <div class="w-15 p-4 shadow-lg border-right-primary-1">
           <div>
             <ul>
               <li class="my-4">
@@ -98,57 +98,80 @@
           <div>
             <h4 class="text-gray-500">
               <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>Text
-              Input
+              Inputs
             </h4>
-            <div class="flex gap-2">
+            <p class="text-gray-500 my-4">
+              Classes for text inputs are like :
+              <span class="bg-light-500 py-1 px-2 rounded-1"
+                >'[info]-input'</span
+              >
+            </p>
+            <div class="">
+              <div class="w-30 rounded-1 my-5">
+                <lavel class="text-gray-700 my-0 fs-15">Primary Input</lavel>
+                <input
+                  placeholder="primary-input"
+                  class="primary-input my-4 rounded-1"
+                />
+                <lavel class="text-gray-700 my-0 fs-15">Info Input</lavel>
+
+                <input
+                  placeholder="info-input fs-15"
+                  class="info-input my-4 rounded-1"
+                />
+                <lavel class="text-gray-700 my-0">Secondary Input</lavel>
+
+                <input
+                  placeholder="secondary-input fs-15"
+                  class="secondary-input my-4 rounded-1"
+                />
+                <lavel class="text-gray-700 my-0">Teal Input</lavel>
+
+                <input
+                  placeholder="teal-input fs-15"
+                  class="teal-input my-4 rounded-1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <h4 class="text-gray-500">
+              <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>File
+              Inputs
+            </h4>
+            <p class="text-gray-500 my-4">
+              Classes for File inputs are like :
+              <span class="bg-light-500 py-1 px-2 rounded-1"
+                >'[info]-file-input'</span
+              >
+            </p>
+            <div class="flex flex-column">
               <input
-                placeholder="primary-input"
-                class="primary-input my-2 rounded-1 w-30"
+                type="file"
+                placeholder="primary-file-input"
+                class="primary-file-input my-2 rounded-1 w-30"
               />
               <input
-                placeholder="info-input"
-                class="info-input my-2 rounded-1 w-30"
+                placeholder="info-file-input"
+                type="file"
+                class="info-file-input my-2 rounded-1 w-30"
               />
               <input
-                placeholder="secondary-input"
-                class="secondary-input my-2 rounded-1 w-30"
+                type="file"
+                placeholder="secondary-file-input"
+                class="secondary-file-input my-2 rounded-1 w-30"
               />
               <input
-                placeholder="teal-input"
-                class="teal-input my-2 rounded-1 w-30"
+                type="file"
+                placeholder="teal-file-input"
+                class="teal-file-input my-2 rounded-1 w-30"
               />
             </div>
           </div>
           <div>
             <h4 class="text-gray-500">
-              <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>File
-              Input
-            </h4>
-            <input
-              type="file"
-              placeholder="primary-file-input"
-              class="primary-file-input my-2 rounded-1 w-30"
-            />
-            <input
-              placeholder="info-file-input"
-              type="file"
-              class="info-file-input my-2 rounded-1 w-30"
-            />
-            <input
-              type="file"
-              placeholder="secondary-file-input"
-              class="secondary-file-input my-2 rounded-1 w-30"
-            />
-            <input
-              type="file"
-              placeholder="teal-file-input"
-              class="teal-file-input my-2 rounded-1 w-30"
-            />
-          </div>
-          <div>
-            <h4 class="text-gray-500">
               <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>Radio
-              Input
+              Inputs
             </h4>
             <input
               type="radio"
@@ -173,9 +196,15 @@
               checked
             />
           </div>
-          <div>
+          <p class="text-gray-500">
+            Classes for Redios are like :
+            <span class="bg-light-500 py-1 px-2 rounded-1"
+              >'[info]-redio-input'</span
+            >
+          </p>
+          <div class="mt-5">
             <h4 class="text-gray-500">
-              <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>Chackbox
+              <span class="text-primary-500 fw-800 fs-20 mr-3">#</span>Chackboxs
             </h4>
             <input
               type="checkbox"
@@ -200,6 +229,12 @@
               checked
             />
           </div>
+          <p class="text-gray-500">
+            Classes for checkboxes are like :
+            <span class="bg-light-500 py-1 px-2 rounded-1"
+              >'[info]-checkbox-input'</span
+            >
+          </p>
         </div>
       </div>
     </section>

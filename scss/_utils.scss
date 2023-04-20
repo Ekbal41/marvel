@@ -1,4 +1,7 @@
 // some utility css classess for making life easy
+.text-white {
+  color: $white;
+}
 
 .center {
   display: flex;
@@ -27,7 +30,6 @@
 }
 
 .text {
-  //   font-size: 1rem;
   font-weight: 400;
 }
 

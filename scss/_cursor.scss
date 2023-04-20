@@ -1,0 +1,5 @@
+@each $key, $value in $cursor-events {
+  .cursor-#{$key} {
+    cursor: $value;
+  }
+}

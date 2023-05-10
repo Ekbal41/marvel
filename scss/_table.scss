@@ -19,26 +19,25 @@ td {
   border-top: 1px solid #dee2e6;
 }
 
-// Table head cell
-
-th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background-color: $primary-color;
-  color: $white;
-  text-align: start;
-}
-
-// Table hover
-
-tbody tr {
-  &:hover {
-    background-color: rgba($primary-500, 0.075);
+@each $color, $color-value in $all-colors {
+  .#{$color}-table {
+    th,
+    td {
+      color: inherit;
+      border-color: $color-value;
+    }
+    th {
+      background-color: $color-value;
+      color: $white;
+      text-align: start;
+    }
+    tbody tr {
+      &:hover {
+        background-color: rgba($color-value, 0.075);
+      }
+    }
+    tbody tr:nth-of-type(odd) {
+      background-color: rgba($color-value, 0.075);
+    }
   }
-}
-
-// Table striped
-
-tbody tr:nth-of-type(odd) {
-  background-color: rgba($primary-500, 0.075);
 }

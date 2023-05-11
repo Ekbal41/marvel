@@ -5,7 +5,7 @@ export default function Get() {
     <>
       <section>
         <div class="p-4">
-          <h1 class="fs-45 fw-400">Get started with Marvel.</h1>
+          <h1 class="fs-45 fw-400">Get started with Marvel</h1>
           <p class="fs-20 text-gray-600 mt-2">
             Marvel is a CSS framework that helps you to build your website.
             <br />

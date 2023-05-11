@@ -11,6 +11,7 @@ export default function Navbar() {
           position: "fixed",
           top: 0,
           left: 0,
+          zIndex: 1000,
         }}
       >
         <div class="flex flex-justify-between py-2 flex-align-center text-white text-up">

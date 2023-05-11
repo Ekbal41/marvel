@@ -1,3 +1,4 @@
+import { CopyBlock, dracula, CodeBlock, arta } from "react-code-blocks";
 export default function Buttons() {
   return (
     <>
@@ -21,23 +22,21 @@ export default function Buttons() {
         </h4>
         <hr />
         <div>
-          <div>
-            <textarea
-              disabled
-              class="w-100 pt-6 mt-5 bg-gray-800 text-gray-300 rounded-4 cursor-pointer"
-              style={{ height: 150 }}
-            >
-              <div>
-                <button class="btn btn-primary ">Primary</button>
-                <button class="btn btn-secondary ">secondary</button>
-                <button class="btn btn-info ">info</button>
-                <button class="btn btn-success ">success</button>
-                <button class="btn btn-warning">warning</button>
-                <button class="btn btn-danger ">danger</button>
-                <button class="btn btn-light ">light</button>
-                <button class="btn btn-dark ">dark</button>
-              </div>
-            </textarea>
+          <div class="mt-5">
+            <CopyBlock
+              text={`<button class="btn btn-primary ">Primary</button>
+<button class="btn btn-secondary ">secondary</button>
+<button class="btn btn-info ">info</button>
+<button class="btn btn-success ">success</button>
+<button class="btn btn-warning">warning</button>
+<button class="btn btn-danger ">danger</button>
+<button class="btn btn-light ">light</button>
+<button class="btn btn-dark ">dark</button>`}
+              language={"html"}
+              showLineNumbers={true}
+              wrapLines
+              theme={dracula}
+            />{" "}
           </div>
         </div>
         <h4 class="text-primary-500 text-up fw-800 mt-7">
@@ -105,44 +104,16 @@ export default function Buttons() {
         </h4>
         <hr />
         <div>
-          <div>
-            <textarea
-              disabled
-              class="w-100 pt-6 mt-5 bg-gray-800 text-gray-300 rounded-4 cursor-pointer"
-              style={{ height: 150 }}
-            >
-              <div>
-                <button class="btn btn-primary mb-4 p-1 rounded-3 fs-12">
-                  {" "}
-                  Primary{" "}
-                </button>
-                <button class="btn btn-secondary mb-4 p-1 rounded-3 fs-12">
-                  {" "}
-                  secondary{" "}
-                </button>
-                <button class="btn btn-info mb-4 p-1 rounded-3 fs-12">
-                  info
-                </button>
-                <button class="btn btn-success mb-4 p-1 rounded-3 fs-12">
-                  success{" "}
-                </button>
-                <button class="btn btn-warning mb-4 p-1 rounded-3 fs-12">
-                  {" "}
-                  warning{" "}
-                </button>
-                <button class="btn btn-danger mb-4 p-1 rounded-3 fs-12">
-                  {" "}
-                  danger{" "}
-                </button>
-                <button class="btn btn-light mb-4 p-1 rounded-3 fs-12">
-                  {" "}
-                  light{" "}
-                </button>
-                <button class="btn btn-dark mb-4 p-1 rounded-3 fs-12">
-                  dark
-                </button>
-              </div>
-            </textarea>
+          <div class="mt-5">
+            <CopyBlock
+              text={`<button class="btn btn-primary mb-4 p-1 rounded-3 fs-12">primary</button>
+ <button class="btn btn-info mb-4 p-1 rounded-3 fs-12">info</button>
+<button class="btn btn-dark mb-4 p-1 rounded-3 fs-12">dark</button>`}
+              language={"html"}
+              showLineNumbers={true}
+              wrapLines
+              theme={dracula}
+            />{" "}
           </div>
         </div>
       </div>

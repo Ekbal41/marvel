@@ -1,3 +1,5 @@
+import { CopyBlock, dracula } from "react-code-blocks";
+
 export default function Get() {
   return (
     <>
@@ -25,10 +27,27 @@ export default function Get() {
               <br />
               Add the following marvel minifyed css file in your head tag.
             </p>
-            <div>
-              <pre class=" mt-5 p-2 rounded-1">
-                <code>link rel="stylesheet"href="css/marvel.min.css"</code>
-              </pre>
+            <div class="mt-5">
+              <CopyBlock
+                text={`          <!doctype html>
+                <html lang="en">
+                  <head>
+                    <!-- Required meta tags -->
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <!-- Marvel CSS -->
+                    <link href="/css/marvel.min.css" rel="stylesheet" >
+                    <title>Hello, world!</title>
+                  </head>
+                  <body>
+                    <h1>Hello, world!</h1>
+                  </body>
+                </html>`}
+                language={"html"}
+                showLineNumbers={true}
+                wrapLines
+                theme={dracula}
+              />{" "}
             </div>
           </div>
         </div>
@@ -54,6 +73,35 @@ export default function Get() {
                 </td>
               </tr>
             </table>
+          </div>
+          <div class="mt-5 ml-5">
+            <p class="mb-5">
+              You can also use the following{" "}
+              <span class="text-underline text-blue-500">CDN</span> links to get
+              started with Marvel.
+              <br />
+              This method is not recommended for production, but it is good for
+              learning and testing.
+            </p>
+            <CopyBlock
+              text={`          <!doctype html>
+              <html lang="en">
+              <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Marvel demo</title>
+                <link href="https://cdn.jsdelivr.net/npm/marvel@1.0.0-alpha3/dist/css/marvel.min.css" rel="stylesheet" >
+              </head>
+              <body>
+                <h1>Hello, world!</h1>
+                <script src="https://cdn.jsdelivr.net/npm/marvel@1.0.0-alpha3/dist/js/marvel.bundle.min.js" ></script>
+              </body>
+            </html>`}
+              language={"html"}
+              showLineNumbers={true}
+              wrapLines
+              theme={dracula}
+            />{" "}
           </div>
         </div>
       </section>
